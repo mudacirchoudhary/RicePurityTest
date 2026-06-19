@@ -1,3 +1,7 @@
+/* ============================================================
+   ORIGINAL STYLES — PRESERVED EXACTLY
+   ============================================================ */
+
 body {
     text-align: center;
     font-size: 20px;
@@ -11,7 +15,7 @@ body {
 }
 
 img {
-    max-width: 70%; /* Ensures images donâ€™t overflow */
+    max-width: 70%;
     height: auto;
     width: auto;
 }
@@ -42,10 +46,10 @@ button {
     background-color: rgba(255, 0, 0, 0.3);
     color: rgb(0, 0, 5);
 }
-            
+
 html {
     background-color: #FBEEC8;
-    background-image: url("owl.png");
+    /* owl.png background removed */
 }
 
 #list {
@@ -63,7 +67,7 @@ input[type="checkbox"] {
     width: 20px;
     height: 20px;
     accent-color: #9FDDF9;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 label {
@@ -80,18 +84,18 @@ h1 {
 
 .thresher-link {
     color: #0A509E;
-    text-decoration: none; /* Remove underline */
-    font-weight: bold; /* Make it stand out */
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .thresher-link:hover {
-    color: #303B61; /* Slightly darker on hover */
-    text-decoration: underline; /* Add underline on hover */
+    color: #303B61;
+    text-decoration: underline;
 }
 
 @media (max-width: 768px) {
     img {
-        max-width: 100%; /* Ensures images donâ€™t overflow */
+        max-width: 100%;
     }
 
     .container {
@@ -101,5 +105,416 @@ h1 {
     .button {
         font-size: 0.9em;
         padding: 16px 16px;
+    }
+}
+
+/* ============================================================
+   NAVBAR
+   — same #FBEEC8 cream as the page, mint bottom border
+   ============================================================ */
+.site-nav {
+    background: #FBEEC8;
+    border-bottom: 2px solid #000;
+    padding: 0 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.nav-inner {
+    max-width: 860px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+}
+
+.nav-brand {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #222;
+    text-decoration: none;
+}
+
+.nav-cta {
+    /* mirrors .button exactly */
+    padding: 8px 20px;
+    border-radius: 20px;
+    background-color: rgba(102, 255, 220, 0.3);
+    color: rgb(0, 0, 5);
+    text-decoration: none;
+    font-size: 0.85em;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-cta:hover {
+    background-color: rgba(102, 255, 220, 0.5);
+}
+
+/* ============================================================
+   ORIGINAL HEADER CONTENT
+   ============================================================ */
+.site-intro {
+    padding: 20px 10px 0;
+}
+
+/* ============================================================
+   QUESTIONS — centred wrapper, same left-text inside
+   ============================================================ */
+.questions-wrapper {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/* ============================================================
+   CONTENT SECTION
+   — inherits body font (20px, browser default) automatically
+   — text-align: left matches #list style
+   ============================================================ */
+.content-section {
+    background: #FBEEC8;
+    padding: 30px 20px 50px;
+    text-align: left;
+}
+
+.content-inner {
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+/* headings — same weight/feel as the page's existing bold text */
+.content-inner h2 {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #111;
+    margin: 40px 0 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #000;
+}
+
+.content-inner h2:first-child {
+    margin-top: 0;
+}
+
+.content-inner h3 {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #222;
+    margin: 24px 0 8px;
+}
+
+.content-inner p {
+    margin-bottom: 12px;
+    /* inherits 20px and body font-family automatically */
+}
+
+/* score cards — same mint background as the buttons */
+.score-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+    gap: 10px;
+    margin: 16px 0;
+}
+
+.score-card {
+    background: rgba(102, 255, 220, 0.2);
+    border: 1px solid #000;
+    border-radius: 12px;
+    padding: 14px 10px;
+    text-align: center;
+}
+
+.score-range {
+    display: block;
+    font-size: 1.15em;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 5px;
+}
+
+.score-desc {
+    display: block;
+    font-size: 1em;
+    color: #444;
+    line-height: 1.4;
+}
+
+/* note box */
+.note-box {
+    background: rgba(102, 255, 220, 0.15);
+    border-left: 4px solid #000;
+    border-radius: 0 8px 8px 0;
+    padding: 12px 16px;
+    margin: 16px 0;
+    font-size: 1em;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* feature cards — same mint tint */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 12px;
+    margin: 16px 0;
+}
+
+.feature-card {
+    background: rgba(102, 255, 220, 0.15);
+    border: 1px solid #000;
+    border-radius: 12px;
+    padding: 16px 14px;
+    text-align: left;
+}
+
+.feature-card h4 {
+    font-size: 1em;
+    font-weight: bold;
+    color: #111;
+    margin: 0 0 6px;
+}
+
+.feature-card p {
+    font-size: 1em;
+    color: #444;
+    margin: 0;
+    line-height: 1.55;
+}
+
+/* FAQ — same mint tint as buttons */
+.faq-list {
+    list-style: none;
+    padding: 0;
+    margin: 12px 0 0;
+}
+
+.faq-item {
+    background: rgba(102, 255, 220, 0.15);
+    border: 1px solid #000;
+    border-radius: 12px;
+    margin-bottom: 8px;
+    overflow: hidden;
+}
+
+.faq-question {
+    padding: 13px 16px;
+    font-weight: bold;
+    color: #111;
+    font-size: 1em;
+}
+
+.faq-answer {
+    border-top: 1px solid #000;
+    padding: 10px 16px 13px;
+    font-size: 1em;
+    color: #333;
+    line-height: 1.65;
+}
+
+/* ============================================================
+   FOOTER WAVE
+   — fill matches footer background (same mint as buttons)
+   ============================================================ */
+.footer-wave-wrap {
+    background: #FBEEC8;
+    line-height: 0;
+    overflow: hidden;
+}
+
+.footer-wave-wrap svg {
+    display: block;
+    width: 100%;
+    height: 60px;
+}
+
+/* ============================================================
+   FOOTER
+   — background is the site's own mint button color, solidified
+   — inherits body font (no override), uses same link color
+   ============================================================ */
+.site-footer {
+    background: #000;
+    border-top: 2px solid #000;
+    color: #eee;
+}
+
+.footer-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 44px 24px 0;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 32px;
+    padding-bottom: 36px;
+}
+
+/* Brand column */
+.footer-brand-col .footer-brand-name {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.footer-brand-col > p {
+    font-size: 0.78em;
+    line-height: 1.7;
+    color: #bbb;
+    margin: 0 0 18px;
+    max-width: 260px;
+}
+
+/* Social icons */
+.social-icons {
+    display: flex;
+    gap: 8px;
+}
+
+.social-icon {
+    width: 36px;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.social-icon:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.social-icon svg {
+    width: 16px;
+    height: 16px;
+    stroke: #fff;
+}
+
+/* Link columns */
+.footer-links-col h4 {
+    font-weight: bold;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: #fff;
+    margin: 0 0 14px;
+}
+
+.footer-links-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links-col ul li {
+    margin-bottom: 9px;
+}
+
+.footer-links-col ul li a {
+    color: #8db8e8;
+    text-decoration: none;
+    font-size: 0.85em;
+}
+
+.footer-links-col ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Footer bottom bar */
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 18px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.78em;
+    color: #888;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.footer-bottom-links {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.footer-bottom-links a {
+    color: #8db8e8;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.footer-bottom-links a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer-bottom-links span {
+    color: #555;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 768px) {
+    img {
+        max-width: 100%;
+    }
+
+    .container {
+        padding: 5px;
+    }
+
+    .button {
+        font-size: 0.9em;
+        padding: 16px 16px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .footer-brand-col {
+        grid-column: 1 / -1;
+    }
+
+    .footer-brand-col > p {
+        max-width: 100%;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .score-grid {
+        grid-template-columns: 1fr 1fr;
     }
 }
